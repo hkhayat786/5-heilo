@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+html{
+    font-size: 15px;
+}
+body{
+    background-color: #f2f2f2;
+}
+/* banner area starts here */
+
+.my-container{
+    padding: 0;
+}
+#my-navigation{
+   width: 100%;
+    background-color: rgb(0, 0, 0);
+   border: 0;
+   position: absolute;
+   z-index: 10;
+}
+#my-navigation .navbar-toggle{
+    display: block;
+    border: 0;
+}
+#my-navigation .navbar-toggle:hover{
+    background: none;
+    border: 0;
+    cursor: pointer;
+}
+#my-navigation .navbar-header{
+    float: none;
+}
+#my-navigation .icon-bar{
+    background-color: #fff;
+}
+#my-navigation .navbar-right{
+    float: left !important;
+    
+}
+#my-navigation .icon-bar-left{
+    float: left;
+}
+#my-navigation .icon-right{
+    float: right;
+    position: relative;
+    top: -3px;
+    padding-left: 0.8rem;
+    color: #fff;
+}
+#my-navigation .navbar-brand, #my-navigation ul li a{
+    color: #fff;
+}
+
+/* carousel starts */
+.carousel .item{
+    background-image: url("../images/slide01.jpg");
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+}
+.carousel .item-2{
+    background-image: url("../images/slide02.jpg");
+}
+.carousel .item-3{
+    background-image: url("../images/slide03.jpg");
+}
+.carousel .item-4{
+    background-image: url("../images/slide04.jpg");
+}
+.carousel .item-5{
+    background-image: url("../images/slide05.jpg");
+}
+/* banner text area*/
+.banner-text {
+    width: 30%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    margin: 0 auto;
+    color: #fff;
+}
+.banner-text p{
+    font-size: 1rem;
+    letter-spacing: 0.2rem;
+}
+.banner-text h1{
+    font-size: 6rem;
+}
+/* two section area starts here */
+.two-section{
+    padding: 4rem;
+}
+.left , .right{
+    width: 95%;
+    background-color: #fff;
+}
+.right{
+    margin-left: 5%;
+}
+.left img , .right img{
+    width: 100%;
+}
+.left h3 , .right h3{
+    font-size: 0.8rem;
+    letter-spacing: 0.2rem;
+    text-align: center;
+    color: grey;
+    margin-top: 1rem;
+
+}
+.left h2 , .right h2{
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: grey;
+  
+    text-align: center;
+}
+.left p , .right p{
+    font-size: 0.8rem;
+    font-weight: 300;
+    text-align: left;
+    line-height: 1.5rem;
+    padding:0.8rem 2rem ;
+}
+.left button , .right button{
+    width: 100px;
+    height: 35px;
+    font-size: 0.9rem;
+    font-weight: 300;
+    font-family: 'poppins', sans-serif;
+    border: 2px solid grey;
+    background: none;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+/* full width area starts here */
+.full-width{
+    width: 100%;
+    background-image: url("../images/slide04.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 4rem;
+    color: #fff;
+}
+.full-width h3 , .image-gallery h3{
+    font-size: 0.8rem;
+    letter-spacing: 0.3rem;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.full-width hr , .image-gallery hr{
+    width: 50%;
+    margin: 0 auto;
+}
+.full-width h2 , .image-gallery h2{
+    font-size: 1.6rem;
+    font-weight: 300;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+/* four image section area starts here */
+.image-gallery{
+    padding: 4rem;
+}
+.four-image{
+    margin-top: 3rem;
+}
+.four-image img{
+    width: 95%;
+    float: left;
+    margin-bottom: 4rem;
+    border: 1rem solid #fff;
+}
+.my-image{
+    margin-left: 5%;
+}
+/* footer area */
+footer{
+    padding: 4rem;
+    background-color: black;
+    color: grey;
+}
+.social .fa{
+    font-size: 1.2rem;
+    padding: 0.8rem 0.5rem;
+    margin-bottom: 1rem;
+}
+footer p{
+    font-size: 1rem;
+    font-weight: 300;
+}
+/* media query starts here */
+@media only screen and (max-width:768px){
+    .my-collapse{
+       padding-top: 0.5rem;
+       padding-left: 1.2rem;
+    }
+    .banner-text p{
+        font-size: 1rem;
+    }
+    .banner-text h1{
+        font-size: 4rem;
+    }
+}
+@media only screen and (max-width:992px){
+    .left,.right{
+        width: 100%;
+    }
+    .right{
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .four-image img{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .my-image{
+        margin-left: 0;
+    }
+}
+@media only screen and (max-width:400px){
+    .banner-text{
+        width: 50%;
+        position: absolute;
+        left: 25%;
+    }
+    .banner-text p{
+        font-size: 0.8rem;
+    }
+    .banner-text h1{
+        font-size: 3.2rem;
+    }
+    footer p{
+        font-size: 0.8rem;
+    }
+}
